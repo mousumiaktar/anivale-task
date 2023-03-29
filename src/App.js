@@ -20,7 +20,7 @@ function App() {
         <input type="search" name="search" id=""
           onChange={(e) => setTerm(e.target.value)}
           placeholder='Search your favourite images....'
-          className='outline-none border-2 gray-600 w-64 py-1 rounded-3xl px-2 mt-2'
+          className='outline-none border-2 gray-600 md:w-96 py-1 rounded-3xl px-2 mt-2'
         />
       </div>
       {!isLoading && imgData.length === 0 && (
