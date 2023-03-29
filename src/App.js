@@ -11,7 +11,7 @@ function App() {
       .then(data => setImgData(data.hits));
   }, [term]);
   return (
-    <div className='container max-auto'>
+    <div className='container mx-auto'>
       <div className='flex justify-center'>
         <input type="search" name="search" id=""
           onChange={(e) => setTerm(e.target.value)}
@@ -19,7 +19,7 @@ function App() {
           className='outline-none border-2 gray-600 w-64 py-1 rounded-3xl px-2 mt-2'
         />
       </div>
-      <div className='grid md:grid-cols-4 gap-4 mt-8 mx-4'>
+      <div className='grid md:grid-cols-4 gap-4 mt-8'>
         {
           imgData.map((image) => (
             <ImgCard
