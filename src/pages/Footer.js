@@ -3,8 +3,8 @@ import React from 'react';
 const Footer = () => {
     return (
         <div className='bg-gray-900 mt-8'>
-            <div className='container mx-auto md:grid grid-cols-3 text-white py-4'>
-                <div>
+            <div className='container mx-auto md:grid grid-cols-3 text-white py-4 pl-2 md:pl-0'>
+                <div className='mb-5 md:mb-0'>
                     <ul>
                         <li className='text-sm mb-2'>Discover</li>
                         <li className='text-xs mb-2'>Editor's Choice</li>
@@ -12,7 +12,7 @@ const Footer = () => {
                         <li className='text-xs mb-2'>Popular Images</li>
                     </ul>
                 </div>
-                <div>
+                <div className='mb-5 md:mb-0'>
                     <ul>
                         <li className='text-sm mb-2'>Community</li>
                         <li className='text-xs mb-2'>Blog</li>
