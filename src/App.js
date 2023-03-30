@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import ImgCard from './pages/ImgCard';
 import banner from "./images/island.jpg";
+import Footer from './pages/Footer';
 
 function App() {
   const [imgData, setImgData] = useState([]);
@@ -16,7 +17,7 @@ function App() {
   }, [term]);
 
   return (
-    <div className='bg-gray-100'>
+    <div>
       <div className='container mx-auto'>
         <div>
           <img className='h-96 w-full relative' src={banner} alt="" />
@@ -49,6 +50,7 @@ function App() {
           </div>
         )}
       </div>
+      <Footer />
     </div>
   );
 }
